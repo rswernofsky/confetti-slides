@@ -1,0 +1,131 @@
+<html>
+<title>Confetti Slides</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="circle.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body class="body">
+
+    <canvas id="canvas"></canvas>
+    <div id="container">
+        <div id="content">
+
+            <div class="slide confetti">
+                <div>
+                    <h2 class="bigText" style="text-align: center;">celebratory message</h2>
+                    <p style="text-align: center;">Use the arrow keys to navigate!</p>
+                </div>
+            </div>
+
+            <div class="slide darkTheme">
+                <div>
+                    <h1>dark slide for emphasis</h1>
+                    <p>some subtext, but it's not as important as the bigger text</p>
+                    <p>additional text</p>
+                    <p>this is an example of a line that is very, extraordinarily, immensely, tremendously, exorbitantly long. it is lengthy. it wraps around the screen! in a few more words it might even wrap around the screen a second time!</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div>
+                    <h2>slide with cool colorful buttons!</h2>
+                    <div id="nicknames">
+                        <button class="nickname" id="n1" onclick="changeBackgroundColor(0)">1st button</button>
+                        <button class="nickname" id="n2" onclick="changeBackgroundColor(1)">2nd button</button>
+                        <button class="nickname" id="n3" onclick="changeBackgroundColor(2)">3rd button</button>
+                        <button class="nickname" id="n4" onclick="changeBackgroundColor(3)">4th button</button>
+                        <button class="nickname" id="n4" onclick="changeBackgroundColor(4)">5th button</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2>slide with an image</h2>
+                <img src="pictures/coffee.png">
+            </div>
+
+            <div class="slide">
+                <h2>second slide with an image</h2>
+                <img src="pictures/lulu.png">
+            </div>
+
+            <div class="slide">
+                <h2>slide with a video!</h2>
+                <div>
+                    <video controls>
+                        <source src="pictures/fireworks.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div>
+                    <h2>slide with an image</h2>
+                    <p>but there's also a caption!</p>
+                    <p>here's another one</p>
+                </div>
+                <img src="pictures/sunset.png">
+            </div>
+
+            <div class="slide">
+                <div>
+                    <h2>here's a slide with lots of emojis that grow in size</h2>
+                    <ul id="emojis">
+                        <li id="emoji1">🥵</li>
+                        <li id="emoji2">🍳</li>
+                        <li id="emoji3">🤺</li>
+                        <li id="emoji4">🦵</li>
+                        <li id="emoji5">🚨</li>
+                        <li id="emoji6">🥺</li>
+                        <li id="emoji7">🥴</li>
+                        <li id="emoji8">🕺</li>
+                        <li id="emoji8">🛸</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2>here's a slide with no image!</h2>
+            </div>
+
+            <div class="slide">
+                <div>
+                    <h2>and this one has a caption</h2>
+                    <p>very interesting caption</p>
+                </div>
+            </div>
+
+            <div class="slide darkTheme">
+                <div>
+                    <h1>another slide that's dark for emphasis</h1>
+                    <p>it can be used to transition to another topic!</p>
+                </div>
+            </div>
+
+            <div class="slide quote">
+                <div>
+                    <h2>"it's a quote!"</h2>
+                    <h3>- Someone Important</h3>
+                </div>
+            </div>
+
+            <div class="slide darkTheme">
+                <h1>some final words</h1>
+            </div>
+
+            <div class="slide confetti">
+                <h2 class="bigText" style="text-align: center;">concluding celebratory message</h2>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
